@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 mongoose.connect(
-  "mongodb+srv://hasansaid51:hassensaid12@cluster0.uv9pk.mongodb.net/graphqltest?retryWrites=true&w=majority"
+  "mongodb+srv://@cluster0.uv9pk.mongodb.net/graphqltest?retryWrites=true&w=majority"
 );
 mongoose.connection.once("open", () => {
   console.log("connected to db successfully", "<--------------------------");
