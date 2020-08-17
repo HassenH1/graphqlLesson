@@ -6,9 +6,6 @@ const schema = require("./schema/schema");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
-mongoose.connect(
-  "mongodb+srv://@cluster0.uv9pk.mongodb.net/graphqltest?retryWrites=true&w=majority"
-);
 mongoose.connection.once("open", () => {
   console.log("connected to db successfully", "<--------------------------");
 });
